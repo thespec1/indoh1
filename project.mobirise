@@ -1,0 +1,104 @@
+{
+  "settings": {
+    "name": "Site-05-31_2021",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise5",
+      "title": "Mobirise 5",
+      "styling": {
+        "primaryColor": "#6592e6",
+        "secondaryColor": "#ff6666",
+        "successColor": "#40b0bf",
+        "infoColor": "#47b5ed",
+        "warningColor": "#FFE161",
+        "dangerColor": "#ff9966",
+        "mainFont": "Jost",
+        "display1Font": "Jost",
+        "display1Size": 4.6,
+        "display2Font": "Jost",
+        "display2Size": 3,
+        "display5Font": "Jost",
+        "display5Size": 2,
+        "display7Font": "Jost",
+        "display7Size": 1.2,
+        "display4Font": "Jost",
+        "display4Size": 1.1,
+        "isRoundedButtons": false,
+        "isGhostButtonBorder": false,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.3.5",
+    "siteFonts": [
+      {
+        "css": "'Jost', sans-serif",
+        "name": "Jost",
+        "url": "https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "uniqCompNum": 1,
+    "versionPublish": "5.3.5",
+    "imageResize": true,
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "border-radius": "4px",
+              "@media (max-width: 767px)": {
+                "padding": "1rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left"
+            }
+          },
+          "_name": "content15",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section class=\"content15\" group=\"Content\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"4\" max=\"12\" step=\"1\" value=\"10\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#4479d9\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background8.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-box align-left\">\n                        <h4 class=\"card-title mbr-fonts-style mbr-white mb-3\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Yüzerken seni suyun altında birbirinden büyüleyici manzaralar bekliyor. Mavinin en güzel tonları, eşsiz desenleriyle deniz kabukları, yosunlar, deniz canlıları… Hepsi yanı başında. Yoksa sen de dalarken gözlerini kapattığın için bu harika manzaraları izlemekten mahrum kalanlardan mısın? Peki, su altını keşfetmen için özel olarak tasarlanan bir maskeyle tanışmaya ne dersin? Özel ve işlevsel tasarımı ile Easybreath 500 Su Altı Keşif Maskesinin eşliğinde suyun altını rahatça görebilir, nefes alabilir ve yüzmeyi unutulmaz bir aktiviteye dönüştürebilirsin. Dilersen sözü daha fazla uzatmadan Easybreath 500 Su Altı Keşif Maskesini daha yakından tanımaya geçelim. <br><br><br>Yakından incelemek ve satın almak için hemen tıkla!<br>Su Altını Özgürce Keşfet<br><br>İlk Easybreath modelinin geliştirilmiş versiyonu olan Easybreath 500, su altı dünyasını özgürce keşfedebilmen için tasarlanır. Standart tasarımlı bir şnorkel kullanarak yalnızca ağzından soluk alıp verebilirsin. Easybreath 500’ün tüm yüzü kaplayan tasarımı ise sana hem ağzından hem de burnundan nefes alabilme olanağı tanır. Bu sayede su altında daha konforlu ve özgür olabilirsin. <br><br>Ürünün tasarımında kullanılan özel hava dolaşım sistemi, sen nefes alıp verirken maskenin önünde buğu oluşmasını engeller. Böylece su altında geçirdiğin vakti bölmek ve su yüzüne çıkarak maskeni temizlemek zorunda kalmaz, keşif maceranı devam ettirebilirsin. <br><br><br>Konforlu, Dayanıklı ve Geliştirilmiş Versiyon<br><br>İlk modele kıyasla sağlamlığı ve gövde rahatlığı artırılmış olan Easybreath 500, 180 dereceye kadar etkili panoramik görüş açısı sunar. İlk Easybreath modelinde bulunan “dry-top” sistemi bu üründe de geçerlidir. Bu sistem sayesinde maskenin altında, başını kaldırdığın zaman su çıkışı sağlayan özel bir tahliye valfi bulunur. <br><br>Easybreath 500’e eklenen “dry-top-release” özelliği ise başını öne doğru eğdiğinde ya da dalgalı sularda yüzdüğünde şnorkelin üst kısmından su girmesini önleyerek daha rahat ve kolay bir şekilde nefes alıp vermeni sağlar. Bu sayede soluk alıp verirken %20 oranında daha az efor sarf edebilir, gücünü ve konsantrasyonunu tamamen su altındaki büyüleyici atmosferi keşfetmeye yönlendirebilirsin. <br><br>İlk etapta Easybreath 500’ün şnorkel uzunluğu gözüne kısa görünebilir. Ancak görünüm seni yanıltmasın. Klasik şnorkeller ağza takıldığı için daha uzun gözükür. Easybreath 500’ün şnorkeli ise ağza değil, maskenin baş kısmına takılır. Esasen bu ürünün su üzerinde kalan bölümü, klasik şnorkellere kıyasla daha uzundur. <br><br><br>Su Sızdırmaz ve Pratik Tasarım<br><br>Easybreath 500, yüze tam olarak oturan silikon gövdesi sayesinde su sızdırmaz. Yüzü %90 oranında kaplaması nedeniyle üç farklı boy seçeneği bulunur. XS seçeneği 6 – 10 yaş grubundaki çocuklar için uygundur. 10 yaşından büyük çocukların ve ince bir yüz yapısına sahip olan yetişkinlerin S/M seçeneğini, geniş yapılı yüze sahip yetişkinlerin ise M/L boyunu tercih etmeleri önerilir. <br><br>Ürünün su geçirmez özelliğinin korunabilmesi için maskenin alt kısmıyla çene arasında boşluk kalmaması gerekir. Sakallar maske ve çene arasında boşluk kalmasına yol açabileceğinden, Easybreath 500 sakallı kişiler için uygun değildir. <br><br>Easybreath 500’ün ayarlanabilir kayışı maskeni yüzüne rahatça oturtabilmeni sağlar. Elastik kumaş kullanılarak hazırlanan kayışlar maskeyi takarken saçlarının çekilmesini önler. Kısacası, yüzüne uygun boy seçeneğini tercih ettiğin takdirde su altında maksimum konfor sağlayabilir ve su sızdırmaz tasarımın keyfini çıkarabilirsin. <br><br><br>Easybreath 500’ü Kullanırken Nelere Dikkat Etmelisin?<br><br>Ürünün yüzü büyük oranda kaplayan tasarımı, standart su altı maskelerine kıyasla içinde daha fazla hava barındırmasına yol açar. Bu nedenle 1 metreden fazla derinlikte ve serbest dalış esnasında kullanıma uygun değildir. Serbest dalış yapan kişilerin düzenli aralıklarla basınç azaltması gerekir. Easybreath 500’ü kullanırken burnuna ulaşamayacağın için basıncı azaltman olanaksızdır. Güvenliğini sağlamak adına, ürünü 1 metreyi aşan derinliklerde kullanmaman büyük önem taşır. <br><br>Su altı keşif maskesinin kumla temas etmesinden kaçınmayı unutmamalısın. Çünkü kum, maskenin tahliye valinin tıkanmasına ya da yüzeyinin çizilmesine yol açabilir. Kum kaçma olasılığına karşı maskeni kullanmadan önce durulamayı ve valfi kontrol etmeyi ihmal etmemen oldukça önemli. Bir kaza sonucunda maskenin kırılması ya da hasar görmesi halinde ise yedek parça satın alabilir veya Decathlon mağazalarının satış sonrası hizmet seçeneğinden yararlanabilirsin. Easybreath 500’ün uygun kullanım halinde 2 yıllık garanti süresi olduğunu da hatırlatalım. <br><br><br>Yakından incelemek ve satın almak için hemen tıkla!<br>Senin Easybreath 500’ün Hangisi?<br><br>Easybreath 500’ün tam 5 adet renk seçeneği var. Koyu petrol mavisinden çilek kırmızısına, karbon griden turkuaz yeşiline kadar birbirinden göz alıcı renklerin kombinasyonları arasından hangisini seçeceğin tamamen sana kalmış. Sen de hemen Decathlon’u ziyaret ederek Easybreath 500’ü daha yakından inceleyebilir, tarzına en uygun renk seçeneğini tercih edebilir ve su altında unutulmaz keşiflere çıkabilirsin! <br><br></p>\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start\n                                Now</a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sz0sLu0Wtg",
+          "_anchor": "content15-0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
